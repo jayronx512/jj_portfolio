@@ -1,5 +1,10 @@
 body {
-    padding-top: 50px;
+    padding-top: 56px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -10,13 +15,20 @@ body {
     text-align: center;
 }
 
-.carousel-item {
-    height: 200px;
+.d-block {
+    height: 250px;
 }
+
+@media only screen and (max-width: 780px) {
+    .d-block {
+        height: 100px;
+    }
+}
+
 .carousel-inner {
     min-height : 100px;
     max-height : 200px;
-    width : 100%;
+    width : 100vw;
 }
 
 footer {
@@ -24,21 +36,82 @@ footer {
     height: 5vh;
     width: 100vw;
     background-color: lightgray;
-    display: inline;
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     bottom: 0px;
+}
+
+#footer1 {
+    width: 20vw;
+}
+#footer2 {
+    width: 80vw;
+}
+#footer3 {
+    width: 20vw;
 }
 
 form {
     display: inline;
 }
 
-.btn {
+#iconButton {
     background-color: lightgray;
 }
 
-.btn:hover {
+#iconButton:hover {
     transform:scale(1.3,1.3);
     -webkit-transform:scale(1.3,1.3);
     -moz-transform:scale(1.3,1.3);
+}
+
+#cv {
+    background-color: lightgray;
+}
+
+#cv:hover {
+    -webkit-transform: scale(1.1,1.1);
+    background-color: gainsboro;
+}
+
+#info {
+    height: 100vh;
+    width: 100vw;
+    background-color: #364040;
+    color: white;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+hr {
+    color: black;
+    width: 50vw;
+    border-top: 2px solid;
+}
+
+#homeTitle {
+    font-size: 3.5vw;
+}
+
+#infoTitle {
+    font-size: 2vw;
+}
+
+#infoContent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#profilePicture {
+    width: 20vw;
+    border-radius: 50%;
+}
+
+#infoLeft {
+    width: 50vw;
+}
+
+#infoRight {
+    width: 50vw;
 }

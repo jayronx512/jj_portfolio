@@ -43,7 +43,7 @@
 <body data-spy="scroll" data-target="#navbarSupportedContent">
 
       <section id="home">
-        <h1>Yeow Jing Jong</h1>
+        <p id="homeTitle">Yeow Jing Jong</p>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -52,13 +52,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="https://img.freepik.com/free-photo/pistachio-ice-cream-with-pistachio-nuts-glass-ice-cream-bowl-horizontal-photo_130716-112.jpg?size=626&ext=jpg" alt="First slide">
+                <img class="d-block w-100" src="positivity.png" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://saltpepperskillet.com/wp-content/uploads/espresso-ice-cream-2-vertical.jpg" alt="Second slide">
+                <img class="d-block w-100" src="openminded.png" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://showmetheyummy.com/wp-content/uploads/2016/05/No-Churn-Mint-Oreo-Ice-Cream-Horizontal.jpg" alt="Third slide">
+                <img class="d-block w-100" src="diligent.png" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -72,27 +72,48 @@
         </div>
       </section>
 
+      <section id="info">
+        <p id="infoTitle">Info</p>
+        <hr>
+
+        <div id="infoContent">
+            <div id="infoLeft"><img src="profile.jpg" id="profilePicture"></div>
+            <div id="infoRight">Personal Information</div>
+        </div>
+
+      </section>
+
     <footer>
+      <div id="footer1"></div>
+
+      <div id="footer2">
         <a>Find me at: </a>
         <form action="https://github.com/jayronx512" target="_blank">
-            <button type="submit" class="btn"><i class="fa fa-github"></i></button>
+            <button type="submit" class="btn" id="iconButton"><i class="fa fa-github"></i></button>
         </form>
         
         <form action="https://www.linkedin.com/in/jing-jong-yeow-20baa616a/" target="_blank">
-            <button type="submit" class="btn"><i class="fa fa-linkedin"></i></button>
+            <button type="submit" class="btn" id="iconButton"><i class="fa fa-linkedin"></i></button>
         </form>
 
         <form action="https://www.facebook.com/jjyeow97" target="_blank">
-            <button type="submit" class="btn"><i class="fa fa-facebook"></i></button>
+            <button type="submit" class="btn" id="iconButton"><i class="fa fa-facebook"></i></button>
         </form>
 
         <form action="https://www.instagram.com/jingjongg/" target="_blank">
-            <button type="submit" class="btn"><i class="fa fa-instagram"></i></button>
+            <button type="submit" class="btn" id="iconButton"><i class="fa fa-instagram"></i></button>
         </form>
 
         <form action="https://twitter.com/mouse2jj" target="_blank">
-            <button type="submit" class="btn"><i class="fa fa-twitter"></i></button>
+            <button type="submit" class="btn" id="iconButton"><i class="fa fa-twitter"></i></button>
         </form>
+      </div>
+
+      <div id="footer3">
+        <form action="Yeow Jing Jong's CV and Recommendation Letter.pdf" target="_blank">
+            <button type="submit" class="btn" id="cv">Take a look at my CV!</button>
+        </form>
+      </div>
 
     </footer>
       
@@ -106,7 +127,7 @@
 <script>
 
     $('.carousel').carousel({
-        interval: 2000
+        interval: 3000
     })
 
     $('body').scrollspy({ target: '#navbarSupportedContent' })
