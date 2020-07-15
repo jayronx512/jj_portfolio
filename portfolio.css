@@ -9,6 +9,7 @@ html, body {
 
 .navbar {
     background-color: white;
+    font-family: 'Squada One', cursive;
 }
 
 #home {
@@ -16,12 +17,16 @@ html, body {
 }
 
 .d-block {
-    height: 250px;
+    height: 270px;
 }
 
 @media only screen and (max-width: 780px) {
     .d-block {
         height: 100px;
+    }
+
+    footer {
+        display: none;
     }
 }
 
@@ -40,6 +45,7 @@ footer {
     justify-content: space-between;
     position: fixed;
     bottom: 0px;
+    font-family: 'Squada One', cursive;
 }
 
 #footer1 {
@@ -66,6 +72,12 @@ form {
     -moz-transform:scale(1.3,1.3);
 }
 
+.active {
+    transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+}
+
 #cv {
     background-color: lightgray;
 }
@@ -78,14 +90,28 @@ form {
 #info {
     height: 100vh;
     width: 80vw;
-    background-color: #364040;
+    background-color: white;
+    border: 5px solid;
+    outline: 1px solid;
+    outline-offset: -9px;
     margin: auto;
-    color: white;
+    color: black;
     text-align: center;
     margin-top: 2vh;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
+#education {
+    height: 100vh;
+    width: 80vw;
+    background-color: white;
+    border: 5px solid;
+    outline: 1px solid;
+    outline-offset: -9px;
+    margin: auto;
+    color: black;
+    text-align: center;
+    margin-top: 2vh;
+}
 hr {
     color: black;
     width: 50vw;
@@ -94,21 +120,36 @@ hr {
 
 #homeTitle {
     font-size: 3.5vw;
+    font-family: 'Squada One', cursive;
 }
 
 #infoTitle {
     font-size: 2vw;
+    font-family: 'Chau Philomene One', sans-serif;
+    padding-top: 20px;
+}
+
+#educationTitle {
+    font-size: 2vw;
+    font-family: 'Chau Philomene One', sans-serif;
+    padding-top: 20px;
 }
 
 #infoContent {
     display: flex;
     justify-content: space-evenly;
+    font-family: 'Marcellus', serif;
 }
+
+#educationContent {
+    font-family: 'Marcellus', serif;
+}
+
 
 #profilePicture {
     width: 20vw;
-    border-radius: 50%;
 }
+
 
 #infoLeft {
     width: 50vw;
@@ -121,3 +162,144 @@ hr {
 .icons {
     display: inline;
 }
+
+#tableInfo {
+    width: 40vw;
+    text-align: left;
+    margin: auto;
+    
+}
+
+#tableEducation {
+    width: 70vw;
+    text-align: center;
+    margin: auto auto auto 10vw;
+}
+
+
+td {
+    font-size: 1.2vw;
+    padding: 1vw;
+}
+
+.animated {
+    background-repeat: no-repeat;
+    background-position: left top;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+ }
+ 
+ @-webkit-keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(100px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+    }
+ }
+ 
+ @keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(100px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+ 
+ .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+ }
+
+ @-webkit-keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(-100px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+    }
+ }
+ 
+ @keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-100px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+ 
+ .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+ }
+
+ @-webkit-keyframes fadeInBottom {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateY(20px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateY(0);
+    }
+ }
+ 
+ @keyframes fadeInBottom {
+    0% {
+       opacity: 0;
+       transform: translateY(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+ 
+ .fadeInBottom {
+    -webkit-animation-name: fadeInBottom;
+    animation-name: fadeInBottom;
+ }
+
+ .fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
