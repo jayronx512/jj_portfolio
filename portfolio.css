@@ -20,15 +20,101 @@ html, body {
     height: 270px;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (min-width: 480px) and (max-width: 989px) {
+    #tableInfo {
+        padding-left: 26vw !important;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
     .d-block {
         height: 100px;
     }
 
-    footer {
+    #cv {
         display: none;
     }
-}
+
+    #profilePicture {
+        width: 35vw !important;
+    }
+
+    #cvToggler {
+        display: block !important;
+        font-weight: bold;
+        background-color: white;
+    }
+    #homeTitle {
+        font-size: 20px !important;
+    }
+    #profile {
+        width: 95vw !important;
+    }
+
+    #education {
+        width: 95vw !important;
+    }
+    #tableInfo {
+        width: 100% !important;
+        margin: 1vh auto 1vh auto !important;
+        padding-left: 21vw;
+    }
+
+    #profileContent {
+        display: block !important;
+    }
+
+    #profileTitle {
+        font-size: 16px !important;
+        margin-bottom: 1px;
+    }
+    
+    #profileLeft {
+        width: 100% !important;
+        margin: auto;
+    }
+
+    #profileRight {
+        margin: auto;
+    }
+
+    .profileText {
+        font-size: 12px !important;
+    }
+
+    .profileCol1 {
+        width: 27vw;
+    }
+
+    #educationTitle {
+        font-size: 16px !important;
+        margin-bottom: 1px;
+    }
+
+    .eduHeader {
+        padding: 0 1vw 0 1vw;
+        font-size: 12px !important;
+    }
+    .eduText {
+        font-size: 12px !important;
+    }
+
+    .tableHeader {
+        font-size: 9px !important;
+        width: 90vw;
+    }
+
+    .eduText {
+        font-size: 10px !important;
+        margin-bottom: 1px;
+    }
+    
+    .eduText2 {
+        font-size: 8px !important;
+        padding-left: 17vw;
+    }
+}   
 
 .carousel-inner {
     min-height : 100px;
@@ -36,9 +122,13 @@ html, body {
     width : 100vw;
 }
 
+
+
+
 footer {
     text-align: center;
     height: 5vh;
+    margin: auto;
     width: 100vw;
     background-color: lightgray;
     display: flex;
@@ -82,13 +172,16 @@ form {
     background-color: lightgray;
 }
 
+#cvToggler {
+    display: none;
+}
 #cv:hover {
     -webkit-transform: scale(1.1,1.1);
     background-color: gainsboro;
 }
 
-#info {
-    height: 100vh;
+#profile {
+    height: 100%;
     width: 80vw;
     background-color: white;
     border: 5px solid;
@@ -101,7 +194,7 @@ form {
 }
 
 #education {
-    height: 100vh;
+    height: 100%;
     width: 80vw;
     background-color: white;
     border: 5px solid;
@@ -111,11 +204,14 @@ form {
     color: black;
     text-align: center;
     margin-top: 2vh;
+    margin-bottom: 300px;
 }
+
 hr {
     color: black;
     width: 50vw;
     border-top: 2px solid;
+    margin: auto;
 }
 
 #homeTitle {
@@ -123,7 +219,7 @@ hr {
     font-family: 'Squada One', cursive;
 }
 
-#infoTitle {
+#profileTitle {
     font-size: 2vw;
     font-family: 'Chau Philomene One', sans-serif;
     padding-top: 20px;
@@ -135,7 +231,7 @@ hr {
     padding-top: 20px;
 }
 
-#infoContent {
+#profileContent {
     display: flex;
     justify-content: space-evenly;
     font-family: 'Marcellus', serif;
@@ -143,20 +239,29 @@ hr {
 
 #educationContent {
     font-family: 'Marcellus', serif;
+    font-size: 1.2em;
+    margin: 0 auto auto auto;
+    padding-top: 0;
 }
 
+#keyComp {
+    text-align: center;
+    margin: auto;
+}
 
 #profilePicture {
-    width: 20vw;
+    width: 17vw;
+    margin-top: 10px;
 }
 
 
-#infoLeft {
-    width: 50vw;
+#profileLeft {
+    width: 100vw;
 }
 
-#infoRight {
-    width: 50vw;
+#profileRight {
+    display: table;
+    width: 100%;
 }
 
 .icons {
@@ -164,22 +269,41 @@ hr {
 }
 
 #tableInfo {
-    width: 40vw;
+    display: table-cell;
     text-align: left;
-    margin: auto;
+    margin: auto auto 1vh auto;
     
 }
 
+/*
 #tableEducation {
     width: 70vw;
     text-align: center;
     margin: auto auto auto 10vw;
 }
+*/
 
-
-td {
+.profileText {
     font-size: 1.2vw;
     padding: 1vw;
+}
+
+.eduHeader {
+    font-weight: bold;
+    font-size: 1.27vw;
+    margin-bottom: 1px;
+}
+
+.tableHeader {
+    width: 60vw;
+}
+.eduText {
+    font-size: 1.17vw;
+}
+.eduText2 {
+    font-size: 1.1vw;
+    text-align: left;
+    padding-left: 8vw;
 }
 
 .animated {

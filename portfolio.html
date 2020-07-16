@@ -28,7 +28,7 @@
         </li>
         
         <li class="nav-item">
-            <a class="nav-link" href="#info">Info</a>
+            <a class="nav-link" href="#profile">Info</a>
         </li>
 
         <li class="nav-item">
@@ -41,6 +41,12 @@
 
         <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <form action="Yeow Jing Jong's CV and Recommendation Letter.pdf" target="_blank">
+            <button type="submit" class="btn nav-link" id="cvToggler">Take a look at my CV!</button>
+        </form>
         </li>
       </ul>
     </div>
@@ -77,37 +83,41 @@
         </div>
       </section>
 
-      <section id="info" class="animated fadeInRight">
-        <p id="infoTitle">Info</p>
+      <section id="profile" class="animated fadeInRight">
+        <p id="profileTitle">Profile</p>
         <hr>
 
-        <div id="infoContent">
-            <div id="infoLeft"><img src="profile.jpg" id="profilePicture"></div>
-            <div id="infoRight">
+        <div id="profileContent">
+            <div id="profileLeft"><img src="profile.jpg" id="profilePicture"></div>
+            <div id="profileRight">
             <table id="tableInfo">
               <tr>
-                <td><strong>Name</strong></td>
-                <td>Yeow Jing Jong</td>
+                <th class="profileCol1"></th>
+                <th class="profileCol2"></th>
+              </tr>
+              <tr>
+                <td class="profileText"><strong>Name</strong></td>
+                <td class="profileText">Yeow Jing Jong</td>
               </tr>
 
               <tr>
-                <td><strong>Age</strong></td>
-                <td>23</td>
+                <td class="profileText"><strong>Age</strong></td>
+                <td class="profileText">23</td>
               </tr>
 
               <tr>
-                <td><strong>Contact No</strong></td>
-                <td>+6012 9281428</td>
+                <td class="profileText"><strong>Contact No</strong></td>
+                <td class="profileText">+6012 9281428</td>
               </tr>
 
               <tr>
-                <td><strong>Email</strong></td>
-                <td>yeowjingjong@gmail.com</td>
+                <td class="profileText"><strong>Email</strong></td>
+                <td class="profileText">yeowjingjong@gmail.com</td>
               </tr>
 
               <tr>
-                <td><strong>Nationality</strong></td>
-                <td>Malaysian</td>
+                <td class="profileText"><strong>Nationality</strong></td>
+                <td class="profileText">Malaysian</td>
               </tr>
             </table>
             </div>
@@ -119,13 +129,49 @@
         <p id="educationTitle">Education</p>
         <hr>
         <div id="educationContent">
+        <!--
           <table id="tableEducation">
             <tr>
               <td style="vertical-align: text-top;"><strong>Monash University Malaysia</strong></td>
-              <td style="text-align: left; padding-left: 20px">Bachelor of Chemical Engineering<br/>CGPA: 3.5</td>
+              <td style="text-align: left; padding-left: 20px">Bachelor of Chemical Engineering<br/>WAM: 73.00<br/>CGPA: 3.5</td>
             </tr>
           </table>
-          <div id="educationContent">
+        -->
+          <p class="eduHeader">Monash University Malaysia| Bachelor of Chemical Engineering (Hons.)</p>
+          <p class="eduText">CGPA: 3.5<br/>WAM: 73.00<br/></p>
+          <table id="keyComp">
+            <th colspan="2" class="tableHeader">Key Competencies:</th>
+            <tr>
+              <td class="eduText2">Chemical Thermodynamics</td>
+              <td class="eduText2">Transport Phenomena</td>
+            </tr>
+            <tr>
+              <td class="eduText2">Material & Energy Balance</td>
+              <td class="eduText2">Advance Engineering Mathematics</td>
+            </tr>
+            <tr>
+              <td class="eduText2">Process Material Selection</td>
+              <td class="eduText2">Sustainable Processing</td>
+            </tr>
+            <tr>
+              <td class="eduText2">Heat and Mass Transfer</td>
+              <td class="eduText2">Separation Processes</td>
+            </tr>
+            <tr>
+              <td class="eduText2">Process Design</td>
+              <td class="eduText2">Thermodynamics 1</td>
+            </tr>
+            <tr>
+              <td class="eduText2">Engineer in Society</td>
+              <td class="eduText2">Environmental Management Systems </td>
+            </tr>
+            <tr>
+              <td class="eduText2">Process Control</td>
+            </tr>
+
+          </table>
+          <br/>
+          <p class="eduHeader">NEXT Academy| Full-Stack Web Developer</p>
         </div>
 
 
