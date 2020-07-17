@@ -114,6 +114,10 @@ html, body {
         font-size: 8px !important;
         padding-left: 17vw;
     }
+
+    .sub-language {
+        font-size: 10px !important;
+    }
 }   
 
 .carousel-inner {
@@ -296,6 +300,7 @@ hr {
 
 .tableHeader {
     width: 60vw;
+    text-align: center;
 }
 .eduText {
     font-size: 1.17vw;
@@ -303,6 +308,25 @@ hr {
 .eduText2 {
     font-size: 1.1vw;
     text-align: left;
+    padding-left: 8vw;
+}
+
+.python {
+    display: inline;
+}
+
+.progress {
+    display: inline-flex !important;
+    width: 40vw;
+    margin: auto auto 1vh auto;
+}
+
+#languages {
+    margin: auto;
+    text-align: left;
+
+}
+.sub-language {
     padding-left: 8vw;
 }
 
