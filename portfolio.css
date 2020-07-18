@@ -63,6 +63,14 @@ html, body {
     #achievement {
         width: 95vw !important;
     }
+
+    #working-experiences {
+        width: 95vw !important;
+    }
+
+    #projects {
+        width: 95vw !important;
+    }
     #tableInfo {
         width: 100% !important;
         margin: 1vh auto 1vh auto !important;
@@ -101,6 +109,16 @@ html, body {
     }
 
     #achievementTitle {
+        font-size: 16px !important;
+        margin-bottom: 1px;
+    }
+    
+    #projectsTitle {
+        font-size: 16px !important;
+        margin-bottom: 1px;
+    }
+
+    #expTitle {
         font-size: 16px !important;
         margin-bottom: 1px;
     }
@@ -228,6 +246,37 @@ html, body {
         font-size: 14px !important;
     }
 
+    #project1 {
+        display: inline-block !important;
+    }
+
+    #imgProject1 {
+        width: 60vw !important;
+        margin: auto !important;
+    }
+
+    #projectText1 {
+        margin: auto !important;
+        height: 100% !important;
+        font-size: 12px !important;
+    }
+
+    iframe {
+        width: 250px !important;
+    }
+
+    .flipper-card {
+        font-size: 12px !important;
+    }
+
+    .flipper-back {
+        font-size: 12px !important;
+    }
+
+    #expSub {
+        font-size: 14px !important;
+    }
+
 }   
 
 .carousel-inner {
@@ -335,6 +384,34 @@ form {
     color: black;
     text-align: center;
     margin-top: 2vh;
+    font-family: 'Marcellus', serif;
+    /*animation-delay: 2.3s;*/
+}
+
+#working-experiences {
+    height: 100%;
+    width: 80vw;
+    background-color: white;
+    border: 5px solid;
+    outline: 1px solid;
+    outline-offset: -9px;
+    margin: auto;
+    color: black;
+    text-align: center;
+    margin-top: 2vh;
+    font-family: 'Marcellus', serif;
+}
+#projects {
+    height: 100%;
+    width: 80vw;
+    background-color: white;
+    border: 5px solid;
+    outline: 1px solid;
+    outline-offset: -9px;
+    margin: auto;
+    color: black;
+    text-align: center;
+    margin-top: 2vh;
     margin-bottom: 300px;
     font-family: 'Marcellus', serif;
     /*animation-delay: 2.3s;*/
@@ -365,6 +442,18 @@ hr {
 }
 
 #achievementTitle {
+    font-size: 2vw;
+    font-family: 'Chau Philomene One', sans-serif;
+    padding-top: 20px;
+}
+
+#expTitle {
+    font-size: 2vw;
+    font-family: 'Chau Philomene One', sans-serif;
+    padding-top: 20px;
+}
+
+#projectsTitle {
     font-size: 2vw;
     font-family: 'Chau Philomene One', sans-serif;
     padding-top: 20px;
@@ -524,19 +613,28 @@ hr {
     font-size: 1.1vw;
 }
 
-#a1Text {
-    vertical-align: middle;
-}
-#a2Text {
-    vertical-align: middle;
-}
-#a3Text {
-    vertical-align: middle;
-}
-#a4Text {
-    vertical-align: middle;
+#project1 {
+    display: flex;
+    justify-content: space-evenly;
 }
 
+#imgProject1 {
+    width: 15vw;
+    margin: 1vh 5vw 1vh 10vw;
+}
+
+#projectText1 {
+    margin-right: 10vw;
+    font-size: 1.1vw;
+}
+
+#expSub {
+    font-size: 1.3vw;
+}
+
+iframe {
+    margin-top: 30px;
+}
 
 
 .animated {
@@ -712,6 +810,7 @@ hr {
     }
 
     ul {
+        text-align: left;
         padding-left: 1.5vw;
     }
 
@@ -766,3 +865,68 @@ hr {
         padding-left: 3vw;
         padding-right: 3vw;
     }
+      
+      .row.no-gutters {
+        margin: -5px !important;
+      }
+      
+      .row.no-gutters > * {
+        padding: 5px !important;
+      }
+      
+      .flipper {
+        height: 0;
+        padding-bottom: 100%;
+        position: relative;
+        -webkit-perspective: 800px;
+        -ms-perspective: 800px;
+        perspective: 800px;
+      }
+      
+      @media (min-width: 576px) {
+      
+        .ratio-not-1-1 {
+          padding-bottom: calc(50% - 5px);
+        }
+      
+      }
+      
+      .flipper-card {
+        width: 100%;
+        height: 100%;
+        font-size: 1.3vw;
+        position: absolute;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      
+      .flipper-front,
+      .flipper-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        background: #c1c3c5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .flipper-back {
+        background: #fff;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        font-size: 0.9vw;
+      }
+      
+      .flipper-card.flipper-is-flipped {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+      }
+      
