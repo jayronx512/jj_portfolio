@@ -193,14 +193,7 @@ html, body {
         margin-bottom: 2vh;
     }
     
-    #a1-mobile {
-        display: inline-block !important;
-        height: 100% !important;
-        width: 60vw;
-        margin-bottom: 2vh;
-    }
-
-    #a4-mobile {
+    #a1-mobile, #a4-mobile{
         display: inline-block !important;
         height: 100% !important;
         width: 60vw;
@@ -488,7 +481,7 @@ hr {
 
 #a3 {
     width: 700px;
-    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 #a4 {
