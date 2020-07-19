@@ -285,10 +285,10 @@ html, body {
     width : 100vw;
 }
 
-.carousel {
-    animation-delay: 1s;
+#carouselExampleIndicators {
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
-
 footer {
     text-align: center;
     height: 5vh;
@@ -356,13 +356,17 @@ form {
     color: black;
     text-align: center;
     margin-top: 2vh;
-    animation-delay: 1.7s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 #education {
     height: 100%;
     width: 80vw;
     background-color: white;
+    background-image: url("background1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     border: 5px solid;
     outline: 1px solid;
     outline-offset: -9px;
@@ -392,6 +396,9 @@ form {
     height: 100%;
     width: 80vw;
     background-color: white;
+    background-image: url("background1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     border: 5px solid;
     outline: 1px solid;
     outline-offset: -9px;
@@ -427,6 +434,8 @@ hr {
 #homeTitle {
     font-size: 3.5vw;
     font-family: 'Squada One', cursive;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 #profileTitle {
@@ -754,12 +763,81 @@ iframe {
     animation-name: fadeInTop;
  }
 
- .fade-in {
+ .fade-in06 {
     animation: fadeIn ease 3s;
     -webkit-animation: fadeIn ease 3s;
     -moz-animation: fadeIn ease 3s;
     -o-animation: fadeIn ease 3s;
     -ms-animation: fadeIn ease 3s;
+    -webkit-animation-delay: 0.6s;
+    
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+ .fade-in12 {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+    -webkit-animation-delay: 1.2s;
+    
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+ .fade-in18 {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+    -webkit-animation-delay: 1.8s;
+    
     }
     @keyframes fadeIn {
     0% {opacity:0;}
@@ -849,21 +927,22 @@ iframe {
     
     /* Style the front side (fallback if image is missing) */
     .flip-card-front {
-        background-color: lightgray;
+        background-color: white;
         color: black;
         border-radius: 10px;
     }
     
     /* Style the back side */
     .flip-card-back {
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
         font-size: 1vw;
         text-align: left;
         transform: rotateY(180deg);
         border-radius: 10px;
         padding-left: 3vw;
         padding-right: 3vw;
+        border: solid 1px black;
     }
       
       .row.no-gutters {
@@ -901,6 +980,7 @@ iframe {
         transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        
       }
 
       
@@ -912,14 +992,16 @@ iframe {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 10px;
-        background: #c1c3c5;
+        background: white;
         display: flex;
         align-items: center;
         justify-content: center;
       }
+
       
       .flipper-back {
         background: #fff;
+        border: solid 1px black;
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
         font-size: 0.9vw;
@@ -928,5 +1010,10 @@ iframe {
       .flipper-card.flipper-is-flipped {
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
+      }
+
+      .icon1 {
+          bottom: 2vh;
+          right: 2vw;
       }
       
