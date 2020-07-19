@@ -127,9 +127,6 @@ html, body {
         padding: 0 1vw 0 1vw;
         font-size: 12px !important;
     }
-    .eduText {
-        font-size: 12px !important;
-    }
 
     .tableHeader {
         font-size: 9px !important;
@@ -277,6 +274,10 @@ html, body {
         font-size: 14px !important;
     }
 
+    .food {
+        border: solid 0.7vw black !important;
+    }
+
 }   
 
 .carousel-inner {
@@ -291,7 +292,6 @@ html, body {
 }
 footer {
     text-align: center;
-    height: 5vh;
     margin: auto;
     width: 100vw;
     background-color: lightgray;
@@ -374,7 +374,8 @@ form {
     color: black;
     text-align: center;
     margin-top: 2vh;
-    animation-delay: 2.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 #achievement {
@@ -389,6 +390,8 @@ form {
     text-align: center;
     margin-top: 2vh;
     font-family: 'Marcellus', serif;
+    opacity: 0;
+    animation-fill-mode: forwards;
     /*animation-delay: 2.3s;*/
 }
 
@@ -407,6 +410,8 @@ form {
     text-align: center;
     margin-top: 2vh;
     font-family: 'Marcellus', serif;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 #projects {
     height: 100%;
@@ -421,6 +426,8 @@ form {
     margin-top: 2vh;
     margin-bottom: 300px;
     font-family: 'Marcellus', serif;
+    opacity: 0;
+    animation-fill-mode: forwards;
     /*animation-delay: 2.3s;*/
 }
 
@@ -533,9 +540,12 @@ hr {
 .tableHeader {
     width: 60vw;
     text-align: center;
+    text-decoration: underline;
 }
 .eduText {
     font-size: 1.17vw;
+    margin: auto;
+    text-align: left;
 }
 .eduText2 {
     font-size: 1.1vw;
@@ -551,6 +561,8 @@ hr {
     display: inline-flex !important;
     width: 40vw;
     margin: auto auto 1vh auto;
+    background-color: inherit !important;
+    border: solid 1px black;
 }
 
 #languages {
@@ -559,11 +571,17 @@ hr {
 
 }
 .sub-language {
+    font-weight: bold;
     padding-left: 8vw;
 }
 
 .progress-bar {
-    background-color: darkgray !important;
+    color: black !important;
+    background-color: white !important;
+}
+
+.process-bar-striped {
+    background-color: black;
 }
 
 #a1 {
@@ -639,12 +657,91 @@ hr {
 
 #expSub {
     font-size: 1.3vw;
+    color: red;
 }
 
 iframe {
     margin-top: 30px;
 }
 
+.workHeader {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.workSub {
+    font-weight: bold;
+}
+
+.workSub2{
+    font-style: italic;
+}
+
+.pacman1 {
+    display: flex;
+    justify-content: flex-start;
+}
+.food {
+    display: inline;
+    margin: auto 1.5vw auto;
+    border: solid 0.2vw black;
+    border-radius: 50%;
+}
+
+.pacman {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    background: #f2d648;
+    position: relative;
+    border: solid 1.5px black;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+  }
+
+.pacman__eye {
+    position: absolute;
+    width: 0.6vh;
+    height: 0.6vh;
+    border-radius: 50%;
+    top: 0.5vh;
+    right: 0.8vh;
+    background: #333333;
+}
+
+.pacman__mouth {
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    animation-name: eat;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes eat {
+    0% {
+      clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    }
+    25% {
+      clip-path: polygon(100% 60%, 44% 48%, 100% 40%);
+    }
+    50% {
+      clip-path: polygon(100% 50%, 44% 48%, 100% 50%);
+    }
+    75% {
+      clip-path: polygon(100% 59%, 44% 48%, 100% 35%);
+    }
+    100% {
+      clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    }
+  }
+
+  
 
 .animated {
     background-repeat: no-repeat;
@@ -864,6 +961,142 @@ iframe {
     100% {opacity:1;}
     }
 
+ .fade-in23 {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+    -webkit-animation-delay: 2.3s;
+    
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+ .fade-in28 {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+    -webkit-animation-delay: 2.8s;
+    
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+ .fade-in33 {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+    -webkit-animation-delay: 3.3s;
+    
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+ .fade-in38 {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+    -webkit-animation-delay: 3.8s;
+    
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
     /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
     #cards {
         display: flex;
@@ -973,7 +1206,7 @@ iframe {
       .flipper-card {
         width: 100%;
         height: 100%;
-        font-size: 1.3vw;
+        font-size: 1.17vw;
         position: absolute;
         -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
@@ -1004,7 +1237,7 @@ iframe {
         border: solid 1px black;
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
-        font-size: 0.9vw;
+        font-size: 1vw;
       }
       
       .flipper-card.flipper-is-flipped {
