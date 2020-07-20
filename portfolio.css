@@ -255,7 +255,7 @@ html, body {
     #projectText1 {
         margin: auto !important;
         height: 100% !important;
-        font-size: 11px !important;
+        font-size: 12px !important;
     }
 
     iframe {
@@ -276,6 +276,10 @@ html, body {
 
     .food {
         border: solid 0.7vw black !important;
+    }
+
+    .projectText2 {
+        padding: 0px 10px 0px 10px;
     }
 
 }   
