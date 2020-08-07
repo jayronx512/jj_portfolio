@@ -1,0 +1,160 @@
+@keyframes typing {
+    from { width: 100% }
+    to { width: 0 }
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.container {
+  position: relative;
+  font-family: Consolas, monospace;
+  margin: 0px 30px 0px 30px;
+}
+
+.typing {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.hiders {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.hiders p {
+  position: relative; 
+  z-index: 1000;
+  clear: both; 
+  margin: 0;
+  float: right; /* makes animation go left-to-right */
+  width:0; /* graceful degradation: if animation doesn't work, these are invisible by default */
+  background: #dedede; /* same as page background */
+  animation:    typing 1.5s steps(30, end);
+  animation-fill-mode: both;  /* load first keyframe on page load, leave on last frame at end */
+}
+
+.hiders p:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.hiders p:nth-child(3) {
+  animation-delay: 3s;
+}
+.hiders p:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.hiders p:nth-child(5) {
+  animation-delay: 6s;
+}
+.hiders p:nth-child(6) {
+  animation-delay: 7.5s;
+}
+.hiders p:nth-child(7) {
+  animation-delay: 9s;
+}
+.hiders p:nth-child(8) {
+  animation-delay: 10.5s;
+}
+.hiders p:nth-child(9) {
+  animation-delay: 12s;
+}
+.hiders p:nth-child(10) {
+  animation-delay: 13.5s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+#content-container {
+    position: relative;
+    width: 40vw;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #dedede;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.background-img {
+    margin: auto;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    transform: translate(-50%, 0);
+    opacity: 0.7;
+}
+
+.avatar {
+    position: absolute;
+    top: 2vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 10vw;
+}
+
+.title {
+    padding-top: 14vw;
+    font-family: 'Squada One', cursive;
+}
+
+.next-page {
+    position: absolute;
+    bottom: 30%;
+    right: 20px;
+    font-style: normal;
+    color: black;
+    font-family: Consolas, monospace;
+}
+
+@media only screen and (max-width: 700px) {
+    #content-container {
+        width: 80vw;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .background-img {
+        width: 90%;
+        bottom: 10px;
+    }
+    .title {
+        padding-top: 180px;
+    }
+    .avatar {
+        width: 120px;
+        top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #content-container {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .avatar {
+        top: 20px;
+    }
+    
+    .title {
+        padding-top: 150px;
+    }
+    .next-page {
+        bottom: 28%;
+    }
+}
