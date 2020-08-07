@@ -145,6 +145,8 @@ html, body {
 
     .sub-language {
         font-size: 10px !important;
+        padding-left: 5px !important;
+        height: 2rem !important;
     }
 
     .progress-bar {
@@ -176,7 +178,9 @@ html, body {
     ul {
         padding-left: 5vw !important;
     }
-
+    #achievement0 {
+        display: inline-block !important;
+    }
 
     #achievement1 {
         display: inline-block !important;
@@ -208,11 +212,14 @@ html, body {
         margin-bottom: 2vh;
     }
     
-    #a1-mobile, #a4-mobile{
+    #a0-mobile, #a1-mobile, #a4-mobile{
         display: inline-block !important;
         height: 100% !important;
         width: 60vw;
         margin-bottom: 2vh;
+    }
+    #a0 { 
+        display: none !important;
     }
 
     #a2 {
@@ -221,6 +228,11 @@ html, body {
 
     #a4 {
         display: none !important;
+    }
+
+    #a0Text {
+        height: 100% !important;
+        font-size: 14px !important;
     }
 
     #a1Text {
@@ -275,11 +287,70 @@ html, body {
     }
 
     .food {
+        height: 2px !important;
         border: solid 0.7vw black !important;
+        margin: 0 0.6rem 0 0.6rem !important;
     }
 
     .projectText2 {
         padding: 0px 10px 0px 10px;
+    }
+
+    #code-skills {
+        display: block !important;
+    }
+
+    .skills {
+        width: 80vw !important;
+        margin: auto !important;
+    }
+
+    .left {
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+
+    .right {
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+
+    #assignment1 {
+        display: block !important;
+    }
+
+    .assignment-img {
+        width: 65vw !important;
+        margin-top: 1rem;
+    }
+
+    .assignment1-text {
+        width: 55vw !important;
+        margin: auto;
+        text-align: center !important;
+        padding-left: 0 !important;
+        padding-top: 1rem;
+    }
+    .button-wrap {
+        position: relative
+    }
+    .assignment1-button {
+        bottom: -1rem !important;
+        left: 50%;
+        transform: translate(-50%, 0)
+    }
+
+    .pacman {
+        width: 1rem !important;
+        height: 1rem !important;
+    }
+
+    .with-pacman {
+        padding-top: 0.7rem;
+    }
+    
+    .pacman {
+        bottom: 0.3rem;
     }
 
 }   
@@ -570,13 +641,14 @@ hr {
 }
 
 #languages {
-    margin: auto;
+    margin: 1rem auto auto auto;
     text-align: left;
+
 
 }
 .sub-language {
     font-weight: bold;
-    padding-left: 8vw;
+    padding-left: 10rem;
 }
 
 .progress-bar {
@@ -594,6 +666,11 @@ hr {
     margin-right: 2vw;
 }
 
+#a0 {
+    width: 500px;
+    margin-left: 2vw;
+}
+
 #a2 {
     width: 500px;
     margin-left: 2vw;
@@ -609,6 +686,10 @@ hr {
     margin-left: 2vw;
 }
 
+#a0-mobile {
+    display: none;
+}
+
 #a1-mobile {
     display: none;
 }
@@ -616,6 +697,14 @@ hr {
 #a4-mobile {
     display: none;
 }
+
+#achievement0 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 2vw 2vh 2vw;
+    font-size: 1.1vw;
+}
+
 #achievement1 {
     display: flex;
     justify-content: space-evenly;
@@ -687,14 +776,14 @@ iframe {
 }
 .food {
     display: inline;
-    margin: auto 1.5vw auto;
-    border: solid 0.2vw black;
+    margin: auto 1.5rem auto;
+    border: solid 0.2rem black;
     border-radius: 50%;
 }
 
 .pacman {
-    width: 4vh;
-    height: 4vh;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     background: #f2d648;
     position: relative;
@@ -1253,4 +1342,106 @@ iframe {
           bottom: 2vh;
           right: 2vw;
       }
+
+#code-skills {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.skills {
+    width: 20vw;
+    border: solid 1px black;
+    box-shadow: 0px 0px 7px -0.5px #dbc242;
+    background-color: white;
+}
+
+.skill-title {
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+.skill-headers {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.skill-text {
+    font-size: 0.9rem;
+}
+
+.skill-image {
+    padding-top: 1rem;
+}
+
+#assignment1 {
+    margin: auto;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+}
+
+.assignment-img {
+    width: 30vw;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+
+.boxes {
+    border: solid 1px white;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px;
+    display: inline-flex;
+    font-size: 1.1rem
+}
+
+.assignment1-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    padding-left: 2rem;
+    text-align: left;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+.assignment1-header {
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.assignment1-button {
+    position: absolute;
+    border: solid 1px black;
+    border-radius: 10px;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: inherit;
+}
+
+.assignment1-button:hover {
+    transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -moz-transform:scale(1.3,1.3);
+}
+
+#a0Text {
+    height: 500px;
+}
       
