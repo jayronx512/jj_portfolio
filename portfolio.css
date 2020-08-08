@@ -344,6 +344,7 @@ html, body {
     }
 
     #assignment1 {
+        width: 85vw !important;
         display: block !important;
     }
 
@@ -353,7 +354,7 @@ html, body {
     }
 
     .assignment1-text {
-        width: 55vw !important;
+        width: 85vw !important;
         margin: auto;
         text-align: center !important;
         padding-left: 0 !important;
