@@ -39,6 +39,7 @@ html, body {
 
     #profilePicture {
         width: 35vw !important;
+        margin-top: 5px !important;
     }
 
     #cvToggler {
