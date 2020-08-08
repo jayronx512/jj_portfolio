@@ -23,7 +23,7 @@ html, body {
 
 @media only screen and (min-width: 480px) and (max-width: 989px) {
     #tableInfo {
-        padding-left: 26vw !important;
+        padding-left: 26rem !important;
     }
 
 }
@@ -47,7 +47,7 @@ html, body {
         background-color: white;
     }
     #homeTitle {
-        font-size: 20px !important;
+        font-size: 1.5rem !important;
     }
     #profile {
         width: 95vw !important;
@@ -74,7 +74,7 @@ html, body {
     #tableInfo {
         width: 100% !important;
         margin: 1vh auto 1vh auto !important;
-        padding-left: 21vw;
+        padding-left: 3rem !important;
     }
 
     #profileContent {
@@ -82,7 +82,7 @@ html, body {
     }
 
     #profileTitle {
-        font-size: 16px !important;
+        /* font-size: 16px !important; */
         margin-bottom: 1px;
     }
     
@@ -92,11 +92,12 @@ html, body {
     }
 
     #profileRight {
+        width: 60vw !important;
         margin: auto;
     }
 
     .profileText {
-        font-size: 12px !important;
+        font-size: 0.8rem !important;
     }
 
     .profileCol1 {
@@ -104,63 +105,63 @@ html, body {
     }
 
     #educationTitle {
-        font-size: 16px !important;
+        /* font-size: 16px !important; */
         margin-bottom: 1px;
     }
 
     #achievementTitle {
-        font-size: 16px !important;
+        /* font-size: 16px !important; */
         margin-bottom: 1px;
     }
     
     #projectsTitle {
-        font-size: 16px !important;
+        /* font-size: 16px !important; */
         margin-bottom: 1px;
     }
 
     #expTitle {
-        font-size: 16px !important;
+        /* font-size: 16px !important; */
         margin-bottom: 1px;
     }
 
     .eduHeader {
         padding: 0 1vw 0 1vw;
-        font-size: 12px !important;
+        /* font-size: 12px !important; */
     }
 
     .tableHeader {
-        font-size: 9px !important;
+        /* font-size: 9px !important; */
         width: 90vw;
     }
 
     .eduText {
-        font-size: 10px !important;
+        /* font-size: 10px !important; */
         margin-bottom: 1px;
     }
     
     .eduText2 {
-        font-size: 8px !important;
+        font-size: 0.9rem !important;
         padding-left: 17vw;
     }
 
     .sub-language {
-        font-size: 10px !important;
+        font-size: 1rem !important;
         padding-left: 5px !important;
         height: 2rem !important;
     }
 
     .progress-bar {
-        font-size: 8px !important;
+        /* font-size: 8px !important; */
     }
 
     #cards {
-        font-size: 12px !important;
+        /* font-size: 12px !important; */
         display: inline-block !important;
         margin:auto auto 0 auto !important;
     }
 
     #cards2 {
-        font-size: 12px !important;
+        /* font-size: 12px !important; */
         display: inline-block !important;
         margin: auto;
     }
@@ -172,7 +173,7 @@ html, body {
     }
 
     .flip-card-back {
-        font-size: 12px !important;
+        font-size: 0.85rem !important;
     }
 
     ul {
@@ -232,27 +233,27 @@ html, body {
 
     #a0Text {
         height: 100% !important;
-        font-size: 14px !important;
+        /* font-size: 14px !important; */
     }
 
     #a1Text {
         height: 100% !important;
-        font-size: 14px !important;
+        /* font-size: 14px !important; */
     }
 
     #a2Text {
         height: 100% !important;
-        font-size: 14px !important;
+        /* font-size: 14px !important; */
     }
 
     #a3Text {
         height: 100% !important;
-        font-size: 14px !important;
+        /* font-size: 14px !important; */
     }
 
     #a4Text {
         height: 100% !important;
-        font-size: 14px !important;
+        /* font-size: 14px !important; */
     }
 
     #project1 {
@@ -282,13 +283,13 @@ html, body {
     #projectText1 {
         margin: auto !important;
         height: 100% !important;
-        font-size: 12px !important;
+        /* font-size: 12px !important; */
     }
 
     #projectText3 {
         margin: auto !important;
         height: 100% !important;
-        font-size: 12px !important;
+        /* font-size: 12px !important; */
     }
 
     iframe {
@@ -296,15 +297,15 @@ html, body {
     }
 
     .flipper-card {
-        font-size: 12px !important;
+        /* font-size: 12px !important; */
     }
 
     .flipper-back {
-        font-size: 12px !important;
+        font-size: 0.8rem !important;
     }
 
     #expSub {
-        font-size: 14px !important;
+        /* font-size: 14px !important; */
     }
 
     .food {
@@ -509,6 +510,7 @@ form {
     outline: 1px solid;
     outline-offset: -9px;
     margin: auto;
+    margin-bottom: 300px;
     color: black;
     text-align: center;
     margin-top: 2vh;
@@ -527,7 +529,6 @@ form {
     color: black;
     text-align: center;
     margin-top: 2vh;
-    margin-bottom: 300px;
     font-family: 'Marcellus', serif;
     opacity: 0;
     animation-fill-mode: forwards;
@@ -542,38 +543,38 @@ hr {
 }
 
 #homeTitle {
-    font-size: 3.5vw;
+    font-size: 3.5rem;
     font-family: 'Squada One', cursive;
     opacity: 0;
     animation-fill-mode: forwards;
 }
 
 #profileTitle {
-    font-size: 2vw;
+    font-size: 2rem;
     font-family: 'Chau Philomene One', sans-serif;
     padding-top: 20px;
 }
 
 #educationTitle {
-    font-size: 2vw;
+    font-size: 2rem;
     font-family: 'Chau Philomene One', sans-serif;
     padding-top: 20px;
 }
 
 #achievementTitle {
-    font-size: 2vw;
+    font-size: 2rem;
     font-family: 'Chau Philomene One', sans-serif;
     padding-top: 20px;
 }
 
 #expTitle {
-    font-size: 2vw;
+    font-size: 2rem;
     font-family: 'Chau Philomene One', sans-serif;
     padding-top: 20px;
 }
 
 #projectsTitle {
-    font-size: 2vw;
+    font-size: 2rem;
     font-family: 'Chau Philomene One', sans-serif;
     padding-top: 20px;
 }
@@ -585,7 +586,7 @@ hr {
 
 #educationContent {
     font-family: 'Marcellus', serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin: 0 auto auto auto;
     padding-top: 0;
 }
@@ -630,13 +631,13 @@ hr {
 */
 
 .profileText {
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     padding: 1vw;
 }
 
 .eduHeader {
     font-weight: bold;
-    font-size: 1.27vw;
+    font-size: 1.27rem;
     margin-bottom: 1px;
 }
 
@@ -646,12 +647,12 @@ hr {
     text-decoration: underline;
 }
 .eduText {
-    font-size: 1.17vw;
+    font-size: 1.17rem;
     margin: auto;
     text-align: left;
 }
 .eduText2 {
-    font-size: 1.1vw;
+    font-size: 1.1rem;
     text-align: left;
     padding-left: 8vw;
 }
@@ -676,7 +677,7 @@ hr {
 }
 .sub-language {
     font-weight: bold;
-    padding-left: 10rem;
+    padding-left: 6rem;
 }
 
 .progress-bar {
@@ -705,12 +706,12 @@ hr {
 }
 
 #a3 {
-    width: 700px;
+    width: 500px;
     margin-right: 2vw;
 }
 
 #a4 {
-    width: 700px;
+    width: 500px;
     margin-left: 2vw;
 }
 
@@ -730,35 +731,35 @@ hr {
     display: flex;
     justify-content: space-evenly;
     margin: auto 2vw 2vh 2vw;
-    font-size: 1.1vw;
+    font-size: 1.1rem;
 }
 
 #achievement1 {
     display: flex;
     justify-content: space-evenly;
     margin: auto 2vw 2vh 2vw;
-    font-size: 1.1vw;
+    font-size: 1.1rem;
 }
 
 #achievement2 {
     display: flex;
     justify-content: space-evenly;
     margin: auto 2vw 2vh 2vw;
-    font-size: 1.1vw;
+    font-size: 1.1rem;
 }
 
 #achievement3 {
     display: flex;
     justify-content: space-evenly;
     margin: auto 2vw 2vh 2vw;
-    font-size: 1.1vw;
+    font-size: 1.1rem;
 }
 
 #achievement4 {
     display: flex;
     justify-content: space-evenly;
     margin: auto 2vw 2vh 2vw;
-    font-size: 1.1vw;
+    font-size: 1.1rem;
 }
 
 #project1 {
@@ -773,11 +774,13 @@ hr {
 
 #imgProject1 {
     width: 15vw;
+    height: 100% !important;
     margin: 1vh 5vw 1vh 10vw;
 }
 
 #imgProject2-mobile {
     width: 15vw;
+    height: 100% !important;
     margin: 1vh 10vw 1vh 5vw;
 }
 
@@ -788,19 +791,19 @@ hr {
 
 #projectText1 {
     margin-right: 10vw;
-    font-size: 1.1vw;
+    font-size: 0.85rem;
     padding-right: 5vw;
 }
 
 #projectText3 {
     margin-left: 10vw;
-    font-size: 1.1vw;
+    font-size: 0.85rem;
     padding-left: 5vw;
 }
 
 
 #expSub {
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     color: red;
 }
 
@@ -1246,14 +1249,14 @@ iframe {
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 20px;
-        font-size: 1.17vw;
+        font-size: 1.17rem;
     }
 
     #cards2 {
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 20px;
-        font-size: 1.17vw;
+        font-size: 1.17rem;
     }
 
     .vertical-center {
@@ -1313,7 +1316,7 @@ iframe {
     .flip-card-back {
         background-color: white;
         color: black;
-        font-size: 1vw;
+        font-size: 1rem;
         text-align: left;
         transform: rotateY(180deg);
         border-radius: 10px;
@@ -1350,7 +1353,7 @@ iframe {
       .flipper-card {
         width: 100%;
         height: 100%;
-        font-size: 1.17vw;
+        font-size: 1.17rem;
         position: absolute;
         -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
@@ -1381,7 +1384,7 @@ iframe {
         border: solid 1px black;
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
-        font-size: 1vw;
+        font-size: 1rem;
       }
       
       .flipper-card.flipper-is-flipped {
@@ -1501,5 +1504,9 @@ iframe {
 .assignment-title {
     text-decoration: underline;
     font-weight: bold;
+}
+
+#a0Text, #a1Text, #a2Text, #a3Text, #a4Text {
+    font-size: 0.8rem;
 }
       
