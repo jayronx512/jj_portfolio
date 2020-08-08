@@ -501,6 +501,7 @@ form {
     font-family: 'Marcellus', serif;
     opacity: 0;
     animation-fill-mode: forwards;
+    margin-bottom: 300px;
     /*animation-delay: 2.3s;*/
 }
 
@@ -515,7 +516,6 @@ form {
     outline: 1px solid;
     outline-offset: -9px;
     margin: auto;
-    margin-bottom: 300px;
     color: black;
     text-align: center;
     margin-top: 2vh;
