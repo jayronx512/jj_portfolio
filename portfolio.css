@@ -622,7 +622,8 @@ hr {
     display: table-cell;
     text-align: left;
     margin: auto auto 1vh auto;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
     
 }
 
