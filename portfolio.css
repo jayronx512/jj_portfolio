@@ -75,6 +75,8 @@ html, body {
         width: 100% !important;
         margin: 1vh auto 1vh auto !important;
         padding-left: 3rem !important;
+        padding-top: 15px !important;
+        padding-bottom: 20px !important;
     }
 
     #profileContent {
@@ -601,7 +603,7 @@ hr {
 
 #profilePicture {
     width: 17vw;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 
@@ -622,9 +624,6 @@ hr {
     display: table-cell;
     text-align: left;
     margin: auto auto 1vh auto;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    
 }
 
 /*
