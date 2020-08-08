@@ -283,12 +283,14 @@ html, body {
     #projectText1 {
         margin: auto !important;
         height: 100% !important;
+        padding-right: 0 !important;
         /* font-size: 12px !important; */
     }
 
     #projectText3 {
         margin: auto !important;
         height: 100% !important;
+        padding-left: 0 !important;
         /* font-size: 12px !important; */
     }
 
