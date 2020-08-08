@@ -386,6 +386,10 @@ html, body {
 
     .assignment-border-right {
         border-right: none !important;
+        padding-right: 0 !important;
+    }
+    .assignment-border-left {
+        padding-left: 0 !important;
     }
 
 }   
@@ -652,7 +656,7 @@ hr {
     text-decoration: underline;
 }
 .eduText {
-    font-size: 1.17rem;
+    font-size: 0.9rem;
     margin: auto;
     text-align: left;
 }
@@ -660,6 +664,10 @@ hr {
     font-size: 1.1rem;
     text-align: left;
     padding-left: 8vw;
+}
+
+.left-edutext {
+    padding-right: 1rem;
 }
 
 .python {
@@ -1460,12 +1468,13 @@ iframe {
 }
 
 .boxes {
-    border: solid 1px white;
-    background-color: white;
-    border-radius: 10px;
     padding: 3px;
     display: inline-flex;
     font-size: 1.1rem
+}
+
+.boxes-border-right {
+    border-right: solid 1px black;
 }
 
 .assignment1-text {
@@ -1481,6 +1490,9 @@ iframe {
 
 .assignment1-header {
     font-size: 1.15rem;
+    border: solid 1px white;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .assignment1-button {
@@ -1504,6 +1516,11 @@ iframe {
 
 .assignment-border-right {
     border-right: solid 1.5px white;
+    padding-right: 1rem;
+}
+
+.assignment-border-left {
+    padding-left: 1rem
 }
 
 .assignment-title {
